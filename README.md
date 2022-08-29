@@ -20,4 +20,13 @@ npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This Vue app has 3 components.
+
+DropdownFilter, it can receive a "withFilter" param to add a input search,
+without it it will display a regular list.
+
+InputNumber, it receives a "type" param, it can be currency, integer or decimal
+currency will convert the number to USD currency, integer will convert any number
+with decimals to their nearest integer number, and decimal allow to use digits after the .
+
+InputWordCount, receives a max value, this will define how long the max length can be.

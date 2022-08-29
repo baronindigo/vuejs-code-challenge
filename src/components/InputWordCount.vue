@@ -75,8 +75,8 @@
                 textInput,
                 maxLength,
                 currentChars,
-                changedText,
                 maxLengthReached,
+                changedText,
             }
         }
     })

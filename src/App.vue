@@ -21,7 +21,7 @@
 					<a href="#" @click="closeModal" class="modal-close btn btn-noborder btn-icon"><i class="lpi-close text-dark"></i><span>Close</span></a>
 				</div>
 				<div class="ly-spacearound-center text-left mb-1">
-					<div class="custom-even-2">
+					<div class="custom-even-2 mb-1">
 						<DropdownFilter
 							name="select-food"
 							classes="h4"
@@ -40,7 +40,7 @@
 							@surveySubmit="getFood" />
 					</div>
 
-					<div class="custom-even-2">
+					<div class="custom-even-2 mb-1">
 						<InputWordCount 
 							max=20
 							classes="h4" 
