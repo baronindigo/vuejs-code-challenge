@@ -1,6 +1,7 @@
 <template>
 	<main>
-		<div class="ly-row">
+		<div class="ly-row ly-even-3 mb-1">
+			<div></div>
 			<div v-show="isVisible===true" class="card bg-accent text-white text-left">
 				<ul>
 					<li>Selected Fruit is: {{survey.fruit}}</li>
@@ -9,6 +10,7 @@
 					<li>My Food Budget is: {{survey.budget}}</li>
 				</ul>
 			</div>
+			<div></div>
 		</div>
 		<div>
 			<a href="#" @click="openModal" class="btn btn-primary" data-open-modal="surveymodal" ref="modalOpener">Show Modal</a>
@@ -59,8 +61,8 @@
 							@surveySubmit="getBudget" />
 					</div>
 					<div class="ly-end-center text-right">
-						<button @click="closeModal" class="btn btn-lg">Cancel</button>
-						<button @click="submitFunction" class="btn btn-primary btn-lg">Submit</button>
+						<button @click="closeModal" class="btn">Cancel</button>
+						<button @click="submitFunction" class="btn btn-primary">Submit</button>
 					</div>
 				</div>
 				
